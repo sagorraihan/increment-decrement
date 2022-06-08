@@ -1,37 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Card from "./components/Card";
-import "./components/style.css";
-import Sdata from "./components/Sdata";
+import React from "react";
+import ReactDOM from "react-dom";
+//import "./index.css";
+import Temp from "./components/Temp";
+//import App from "./App";
 
 ReactDOM.render(
 
-<>
-
-<h1  className="heading_style">List of 5 Netflix series in 2022</h1>
-
-  {
-      Sdata.map((val, index) => {
-
-          const {imgsrc, title, sname, link} = val;
-    
-    return(
-        <Card key={index}
-        imgsrc = {imgsrc}
-        title = {title}
-        sname = {sname}
-        link = {link}
-        />
-
-    );
-
-  }
-
-  )
-  
-}
-
-</>,
+    <>
+        <Temp />
+    </>,
 
     document.getElementById("root")
 );
