@@ -1,13 +1,17 @@
 import React from "react";
-import Temp from "./components/Temp";
-//import "./index.css";
+//import UseState from "./components/UseState";
+//import UseEffect from "./components/UseEffect";
+import UseReducer from "./components/UseReducer";
+const App = () => {
+    return (
 
-const App = () =>{
+        <>
+            {/* <UseState/> */}
+            {/* <UseEffect /> */}
+            <UseReducer />
+        </>
+    );
+};
 
-    <>
-        <Temp />
-    </>
+export default App;
 
-   }
-
-   export default App;
